@@ -7,7 +7,7 @@ const options = {
   definition: {
     openapi: '3.0.0',
     info: {
-      title: 'Treklin',
+      title: 'Corporate',
       version: '1.0.0',
       description: 'API documentation for Treklin (Case Management System)',
     },

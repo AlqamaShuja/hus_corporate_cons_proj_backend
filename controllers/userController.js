@@ -309,7 +309,7 @@ const uploadDocument = async (req, res) => {
         .json({ success: false, message: 'No file uploaded' });
     }
 
-    const metadata = await processDocument(file.path); // AI processing with Tika/Ollama/GPT
+    const metadata = await processDocument(file.path); // (Tika Server)
     const document = await Document.create({
       userId: req.userId,
       filePath: `/uploads/${file.filename}`,
